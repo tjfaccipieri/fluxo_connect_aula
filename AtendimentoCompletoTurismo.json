@@ -51,7 +51,7 @@
           "WisdomAssistantArn": {
             "useAIAgentDropdown": true,
             "aiAgentName": "agenteNovoDeTurismo",
-            "aiAgentVersionArn": "arn:aws:wisdom:us-west-2:352243449900:ai-agent/fa38bb2a-11a0-41da-a16a-73068f28c0a8/dd028619-b99c-414b-9c6b-5ee0bf11d794:2"
+            "aiAgentVersionArn": "<arn>"
           }
         },
         "fragments": {
@@ -59,7 +59,7 @@
         },
         "useAIAgentDropdown": true,
         "aiAgentName": "agenteNovoDeTurismo",
-        "aiAgentVersionArn": "arn:aws:wisdom:us-west-2:352243449900:ai-agent/fa38bb2a-11a0-41da-a16a-73068f28c0a8/dd028619-b99c-414b-9c6b-5ee0bf11d794:2"
+        "aiAgentVersionArn": "<arn>"
       },
       "a3a5c3a2-f7e1-4e64-a8f3-2b6497ceec7e": {
         "position": {
@@ -374,7 +374,7 @@
     },
     {
       "Parameters": {
-        "WisdomAssistantArn": "arn:aws:wisdom:us-west-2:352243449900:assistant/fa38bb2a-11a0-41da-a16a-73068f28c0a8"
+        "WisdomAssistantArn": "<arn>"
       },
       "Identifier": "fa61b3b6-667b-4391-84d3-3a1d01a34096",
       "Type": "CreateWisdomSession",
@@ -408,10 +408,10 @@
       "Parameters": {
         "Text": "tomara que funcione..ta acabando a aula",
         "LexV2Bot": {
-          "AliasArn": "arn:aws:lex:us-west-2:352243449900:bot-alias/U25JCHVGCG/BFECAC7CTO"
+          "AliasArn": "<arn>"
         },
         "LexSessionAttributes": {
-          "x-amz-lex:q-in-connect:ai-agent-arn": "arn:aws:wisdom:us-west-2:352243449900:ai-agent/fa38bb2a-11a0-41da-a16a-73068f28c0a8/dd028619-b99c-414b-9c6b-5ee0bf11d794:2"
+          "x-amz-lex:q-in-connect:ai-agent-arn": "<arn>"
         }
       },
       "Identifier": "ce193393-7597-4121-83df-ce62a869a200",
@@ -434,7 +434,7 @@
       "Parameters": {
         "Text": "Você já tem uma conta com a gente, ou quer se cadastrar agora?",
         "LexV2Bot": {
-          "AliasArn": "arn:aws:lex:us-west-2:352243449900:bot-alias/MXYGPYRCUB/OBU8UTUDAW"
+          "AliasArn": "<arn>"
         }
       },
       "Identifier": "75f9d934-856c-4b27-b610-ddc1dccb229c",
@@ -558,7 +558,7 @@
     },
     {
       "Parameters": {
-        "LambdaFunctionARN": "arn:aws:lambda:us-west-2:352243449900:function:cadastroClienteTurismoAula",
+        "LambdaFunctionARN": "<arn>",
         "InvocationTimeLimitSeconds": "5",
         "InvocationType": "SYNCHRONOUS",
         "LambdaInvocationAttributes": {
@@ -600,7 +600,7 @@
     },
     {
       "Parameters": {
-        "LambdaFunctionARN": "arn:aws:lambda:us-west-2:352243449900:function:cadastroClienteTurismoAula",
+        "LambdaFunctionARN": "<arn>",
         "InvocationTimeLimitSeconds": "5",
         "InvocationType": "SYNCHRONOUS",
         "LambdaInvocationAttributes": {
