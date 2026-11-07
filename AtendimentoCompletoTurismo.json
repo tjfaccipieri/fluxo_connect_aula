@@ -1,0 +1,801 @@
+{
+  "Version": "2019-10-30",
+  "StartAction": "e809df2e-b44d-4921-b695-efe6292b6f65",
+  "Metadata": {
+    "entryPointPosition": {
+      "x": 40,
+      "y": 40
+    },
+    "ActionMetadata": {
+      "Voz PT_BR": {
+        "position": {
+          "x": 416.8,
+          "y": 109.6
+        },
+        "isFriendlyName": true,
+        "children": [
+          "Voz PT_BR-dR90tutmo6"
+        ],
+        "parameters": {
+          "TextToSpeechVoice": {
+            "languageCode": "pt-BR"
+          },
+          "TextToSpeechEngine": {
+            "voiceProvider": "connect:agentic"
+          }
+        },
+        "overrideConsoleVoice": true,
+        "fragments": {
+          "SetContactData": "Voz PT_BR-dR90tutmo6"
+        },
+        "overrideLanguageAttribute": true
+      },
+      "Voz PT_BR-dR90tutmo6": {
+        "position": {
+          "x": 416.8,
+          "y": 109.6
+        },
+        "isFriendlyName": true,
+        "dynamicParams": []
+      },
+      "fa61b3b6-667b-4391-84d3-3a1d01a34096": {
+        "position": {
+          "x": 2198.4,
+          "y": 68.8
+        },
+        "children": [
+          "a3a5c3a2-f7e1-4e64-a8f3-2b6497ceec7e",
+          "ce193393-7597-4121-83df-ce62a869a200"
+        ],
+        "parameters": {
+          "WisdomAssistantArn": {
+            "useAIAgentDropdown": true,
+            "aiAgentName": "agenteNovoDeTurismo",
+            "aiAgentVersionArn": "arn:aws:wisdom:us-west-2:352243449900:ai-agent/fa38bb2a-11a0-41da-a16a-73068f28c0a8/dd028619-b99c-414b-9c6b-5ee0bf11d794:2"
+          }
+        },
+        "fragments": {
+          "SetContactData": "a3a5c3a2-f7e1-4e64-a8f3-2b6497ceec7e"
+        },
+        "useAIAgentDropdown": true,
+        "aiAgentName": "agenteNovoDeTurismo",
+        "aiAgentVersionArn": "arn:aws:wisdom:us-west-2:352243449900:ai-agent/fa38bb2a-11a0-41da-a16a-73068f28c0a8/dd028619-b99c-414b-9c6b-5ee0bf11d794:2"
+      },
+      "a3a5c3a2-f7e1-4e64-a8f3-2b6497ceec7e": {
+        "position": {
+          "x": 2198.4,
+          "y": 68.8
+        },
+        "dynamicParams": []
+      },
+      "ce193393-7597-4121-83df-ce62a869a200": {
+        "position": {
+          "x": 2198.4,
+          "y": 68.8
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "prod",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "guiaDoDesesperoSenaoDeuRuim"
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "x-amz-lex:q-in-connect:ai-agent-arn": false
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "guiaDoDesesperoSenaoDeuRuim",
+        "lexV2BotAliasName": "prod",
+        "conditionMetadata": []
+      },
+      "75f9d934-856c-4b27-b610-ddc1dccb229c": {
+        "position": {
+          "x": 704.8,
+          "y": 87.2
+        },
+        "parameters": {
+          "LexV2Bot": {
+            "AliasArn": {
+              "displayName": "producao",
+              "useLexBotDropdown": true,
+              "lexV2BotName": "guiaDeTurismoCliente"
+            }
+          }
+        },
+        "useLexBotDropdown": true,
+        "lexV2BotName": "guiaDeTurismoCliente",
+        "lexV2BotAliasName": "producao",
+        "conditionMetadata": [
+          {
+            "id": "38e2afb3-c845-4c04-bc28-c7976d76ce42",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "cadastrarCliente"
+          },
+          {
+            "id": "6b195550-249d-436e-a9ae-2226dbe610b5",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "buscarCliente"
+          }
+        ]
+      },
+      "2f8f5a2d-3e82-4116-98cd-a7110a1d9f6e": {
+        "position": {
+          "x": 941.6,
+          "y": 236.8
+        },
+        "parameters": {
+          "FlowAttributes": {
+            "codigoCliente": {
+              "Value": {
+                "useDynamic": true
+              }
+            }
+          }
+        }
+      },
+      "f62dff55-9974-446d-aa64-8752b3b3e293": {
+        "position": {
+          "x": 1741.6,
+          "y": 381.6
+        }
+      },
+      "bfd0d90e-ac49-4a71-9dad-e7a4fdc1d74a": {
+        "position": {
+          "x": 940,
+          "y": 36
+        },
+        "parameters": {
+          "FlowAttributes": {
+            "nomeCompleto": {
+              "Value": {
+                "useDynamic": true
+              }
+            },
+            "emailCliente": {
+              "Value": {
+                "useDynamic": true
+              }
+            }
+          }
+        }
+      },
+      "dc74310f-5d68-4ff2-9a27-4ae26807a07f": {
+        "position": {
+          "x": 758.4,
+          "y": 432
+        }
+      },
+      "3dcb31cb-6f2e-4885-a293-4eb668979cc9": {
+        "position": {
+          "x": 2687.2,
+          "y": 293.6
+        }
+      },
+      "a5ae66a4-6a9e-41fd-abbd-9a97fd7ea681": {
+        "position": {
+          "x": 1179.2,
+          "y": 267.2
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "cadastroClienteTurismoAula"
+          },
+          "LambdaInvocationAttributes": {
+            "numero": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "acao": false,
+          "numero": true
+        }
+      },
+      "32ee3fd5-e564-4368-8beb-3854cd15522e": {
+        "position": {
+          "x": 1936,
+          "y": 225.6
+        }
+      },
+      "9fa114e6-712e-46ce-a66b-27598634d235": {
+        "position": {
+          "x": 1172.8,
+          "y": 37.6
+        },
+        "parameters": {
+          "LambdaFunctionARN": {
+            "displayName": "cadastroClienteTurismoAula"
+          },
+          "LambdaInvocationAttributes": {
+            "nome": {
+              "useDynamic": true
+            },
+            "email": {
+              "useDynamic": true
+            }
+          }
+        },
+        "dynamicMetadata": {
+          "acao": false,
+          "nome": true,
+          "email": true
+        }
+      },
+      "8cb07886-61f2-4c64-a80d-924d2532fe5a": {
+        "position": {
+          "x": 3024,
+          "y": 212.8
+        }
+      },
+      "d58695f7-b0fd-4916-822e-ec33f7ef3528": {
+        "position": {
+          "x": 2688.8,
+          "y": 84
+        }
+      },
+      "e809df2e-b44d-4921-b695-efe6292b6f65": {
+        "position": {
+          "x": 156.8,
+          "y": 39.2
+        }
+      },
+      "a580df68-e331-42d8-8488-944e817f3c5f": {
+        "position": {
+          "x": 413.6,
+          "y": 330.4
+        }
+      },
+      "617efc08-9c24-4953-829b-56e0b841f154": {
+        "position": {
+          "x": 2456,
+          "y": 147.2
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "9e7509a3-2a3d-4dcb-8979-918110a5c8f9",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Complete"
+          },
+          {
+            "id": "e2707b9d-714b-4296-b898-b11331d041f5",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "Escalate"
+          }
+        ]
+      },
+      "ca0b3ffe-1156-4425-90bb-30c3f0503bce": {
+        "position": {
+          "x": 1454.4,
+          "y": 107.2
+        },
+        "conditions": [],
+        "conditionMetadata": [
+          {
+            "id": "e6adc5b9-ab89-4885-ae9a-086c2d3823ea",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "cadastrado"
+          },
+          {
+            "id": "eb526f48-bad3-4ba9-a216-0b474b2ad467",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "encontrado"
+          },
+          {
+            "id": "d02eeff2-e09b-4c7f-bdad-aef3a86b2e71",
+            "operator": {
+              "name": "Equals",
+              "value": "Equals",
+              "shortDisplay": "="
+            },
+            "value": "nao_encontrado"
+          }
+        ]
+      },
+      "9a3438a3-b368-49ad-b961-666fc7fd5354": {
+        "position": {
+          "x": 2145.6,
+          "y": 521.6
+        }
+      },
+      "f7c74329-64b6-442b-af8e-6720c20fc30b": {
+        "position": {
+          "x": 1733.6,
+          "y": 54.4
+        }
+      }
+    },
+    "Annotations": [],
+    "name": "AtendimentoCompletoTurismo",
+    "description": "",
+    "type": "contactFlow",
+    "status": "PUBLISHED",
+    "hash": {}
+  },
+  "Actions": [
+    {
+      "Parameters": {
+        "TextToSpeechVoice": "LARISSA",
+        "TextToSpeechEngine": "connect:agentic"
+      },
+      "Identifier": "Voz PT_BR",
+      "Type": "UpdateContactTextToSpeechVoice",
+      "Transitions": {
+        "NextAction": "Voz PT_BR-dR90tutmo6",
+        "Errors": [
+          {
+            "NextAction": "a580df68-e331-42d8-8488-944e817f3c5f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LanguageCode": "pt-BR"
+      },
+      "Identifier": "Voz PT_BR-dR90tutmo6",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "fa61b3b6-667b-4391-84d3-3a1d01a34096",
+        "Errors": [
+          {
+            "NextAction": "a580df68-e331-42d8-8488-944e817f3c5f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "WisdomAssistantArn": "arn:aws:wisdom:us-west-2:352243449900:assistant/fa38bb2a-11a0-41da-a16a-73068f28c0a8"
+      },
+      "Identifier": "fa61b3b6-667b-4391-84d3-3a1d01a34096",
+      "Type": "CreateWisdomSession",
+      "Transitions": {
+        "NextAction": "a3a5c3a2-f7e1-4e64-a8f3-2b6497ceec7e",
+        "Errors": [
+          {
+            "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "WisdomSessionArn": "$.Wisdom.SessionArn"
+      },
+      "Identifier": "a3a5c3a2-f7e1-4e64-a8f3-2b6497ceec7e",
+      "Type": "UpdateContactData",
+      "Transitions": {
+        "NextAction": "ce193393-7597-4121-83df-ce62a869a200",
+        "Errors": [
+          {
+            "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "tomara que funcione..ta acabando a aula",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-west-2:352243449900:bot-alias/U25JCHVGCG/BFECAC7CTO"
+        },
+        "LexSessionAttributes": {
+          "x-amz-lex:q-in-connect:ai-agent-arn": "arn:aws:wisdom:us-west-2:352243449900:ai-agent/fa38bb2a-11a0-41da-a16a-73068f28c0a8/dd028619-b99c-414b-9c6b-5ee0bf11d794:2"
+        }
+      },
+      "Identifier": "ce193393-7597-4121-83df-ce62a869a200",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+        "Errors": [
+          {
+            "NextAction": "617efc08-9c24-4953-829b-56e0b841f154",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "Text": "Você já tem uma conta com a gente, ou quer se cadastrar agora?",
+        "LexV2Bot": {
+          "AliasArn": "arn:aws:lex:us-west-2:352243449900:bot-alias/MXYGPYRCUB/OBU8UTUDAW"
+        }
+      },
+      "Identifier": "75f9d934-856c-4b27-b610-ddc1dccb229c",
+      "Type": "ConnectParticipantWithLexBot",
+      "Transitions": {
+        "NextAction": "dc74310f-5d68-4ff2-9a27-4ae26807a07f",
+        "Conditions": [
+          {
+            "NextAction": "bfd0d90e-ac49-4a71-9dad-e7a4fdc1d74a",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "cadastrarCliente"
+              ]
+            }
+          },
+          {
+            "NextAction": "2f8f5a2d-3e82-4116-98cd-a7110a1d9f6e",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "buscarCliente"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "a580df68-e331-42d8-8488-944e817f3c5f",
+            "ErrorType": "NoMatchingCondition"
+          },
+          {
+            "NextAction": "dc74310f-5d68-4ff2-9a27-4ae26807a07f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowAttributes": {
+          "codigoCliente": {
+            "Value": "$.Lex.Slots.codigoCliente"
+          }
+        }
+      },
+      "Identifier": "2f8f5a2d-3e82-4116-98cd-a7110a1d9f6e",
+      "Type": "UpdateFlowAttributes",
+      "Transitions": {
+        "NextAction": "a5ae66a4-6a9e-41fd-abbd-9a97fd7ea681",
+        "Errors": [
+          {
+            "NextAction": "dc74310f-5d68-4ff2-9a27-4ae26807a07f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "consultei"
+      },
+      "Identifier": "f62dff55-9974-446d-aa64-8752b3b3e293",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+        "Errors": [
+          {
+            "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowAttributes": {
+          "nomeCompleto": {
+            "Value": "$.Lex.Slots.nomeCompleto"
+          },
+          "emailCliente": {
+            "Value": "$.Lex.Slots.emailCliente"
+          }
+        }
+      },
+      "Identifier": "bfd0d90e-ac49-4a71-9dad-e7a4fdc1d74a",
+      "Type": "UpdateFlowAttributes",
+      "Transitions": {
+        "NextAction": "9fa114e6-712e-46ce-a66b-27598634d235",
+        "Errors": [
+          {
+            "NextAction": "dc74310f-5d68-4ff2-9a27-4ae26807a07f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "dc74310f-5d68-4ff2-9a27-4ae26807a07f",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Vou te transferir, só um momento"
+      },
+      "Identifier": "3dcb31cb-6f2e-4885-a293-4eb668979cc9",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "8cb07886-61f2-4c64-a80d-924d2532fe5a",
+        "Errors": [
+          {
+            "NextAction": "8cb07886-61f2-4c64-a80d-924d2532fe5a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-west-2:352243449900:function:cadastroClienteTurismoAula",
+        "InvocationTimeLimitSeconds": "5",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "acao": "consultar",
+          "numero": "$.Lex.Slots.codigoCliente"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "a5ae66a4-6a9e-41fd-abbd-9a97fd7ea681",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "ca0b3ffe-1156-4425-90bb-30c3f0503bce",
+        "Errors": [
+          {
+            "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "não encontrou o cliente"
+      },
+      "Identifier": "32ee3fd5-e564-4368-8beb-3854cd15522e",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+        "Errors": [
+          {
+            "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "LambdaFunctionARN": "arn:aws:lambda:us-west-2:352243449900:function:cadastroClienteTurismoAula",
+        "InvocationTimeLimitSeconds": "5",
+        "InvocationType": "SYNCHRONOUS",
+        "LambdaInvocationAttributes": {
+          "acao": "cadastrar",
+          "nome": "$.Lex.Slots.nomeCompleto",
+          "email": "$.Lex.Slots.emailCliente"
+        },
+        "ResponseValidation": {
+          "ResponseType": "STRING_MAP"
+        }
+      },
+      "Identifier": "9fa114e6-712e-46ce-a66b-27598634d235",
+      "Type": "InvokeLambdaFunction",
+      "Transitions": {
+        "NextAction": "ca0b3ffe-1156-4425-90bb-30c3f0503bce",
+        "Errors": [
+          {
+            "NextAction": "dc74310f-5d68-4ff2-9a27-4ae26807a07f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "8cb07886-61f2-4c64-a80d-924d2532fe5a",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Valeu, falow."
+      },
+      "Identifier": "d58695f7-b0fd-4916-822e-ec33f7ef3528",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "8cb07886-61f2-4c64-a80d-924d2532fe5a",
+        "Errors": [
+          {
+            "NextAction": "8cb07886-61f2-4c64-a80d-924d2532fe5a",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "FlowLoggingBehavior": "Enabled"
+      },
+      "Identifier": "e809df2e-b44d-4921-b695-efe6292b6f65",
+      "Type": "UpdateFlowLoggingBehavior",
+      "Transitions": {
+        "NextAction": "Voz PT_BR"
+      }
+    },
+    {
+      "Parameters": {
+        "LoopCount": "3"
+      },
+      "Identifier": "a580df68-e331-42d8-8488-944e817f3c5f",
+      "Type": "Loop",
+      "Transitions": {
+        "NextAction": "dc74310f-5d68-4ff2-9a27-4ae26807a07f",
+        "Conditions": [
+          {
+            "NextAction": "Voz PT_BR",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "ContinueLooping"
+              ]
+            }
+          },
+          {
+            "NextAction": "dc74310f-5d68-4ff2-9a27-4ae26807a07f",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "DoneLooping"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "dc74310f-5d68-4ff2-9a27-4ae26807a07f",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.Lex.SessionAttributes.Tool"
+      },
+      "Identifier": "617efc08-9c24-4953-829b-56e0b841f154",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+        "Conditions": [
+          {
+            "NextAction": "d58695f7-b0fd-4916-822e-ec33f7ef3528",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Complete"
+              ]
+            }
+          },
+          {
+            "NextAction": "3dcb31cb-6f2e-4885-a293-4eb668979cc9",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "Escalate"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {
+        "ComparisonValue": "$.External.status"
+      },
+      "Identifier": "ca0b3ffe-1156-4425-90bb-30c3f0503bce",
+      "Type": "Compare",
+      "Transitions": {
+        "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+        "Conditions": [
+          {
+            "NextAction": "f7c74329-64b6-442b-af8e-6720c20fc30b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "cadastrado"
+              ]
+            }
+          },
+          {
+            "NextAction": "f7c74329-64b6-442b-af8e-6720c20fc30b",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "encontrado"
+              ]
+            }
+          },
+          {
+            "NextAction": "32ee3fd5-e564-4368-8beb-3854cd15522e",
+            "Condition": {
+              "Operator": "Equals",
+              "Operands": [
+                "nao_encontrado"
+              ]
+            }
+          }
+        ],
+        "Errors": [
+          {
+            "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+            "ErrorType": "NoMatchingCondition"
+          }
+        ]
+      }
+    },
+    {
+      "Parameters": {},
+      "Identifier": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+      "Type": "DisconnectParticipant",
+      "Transitions": {}
+    },
+    {
+      "Parameters": {
+        "SkipWhenDTMFBufferEnabled": "false",
+        "Text": "Olá $.External.nome, seu código de cliente é: $.External.numero.\n\nAnota ele pra não esquecer."
+      },
+      "Identifier": "f7c74329-64b6-442b-af8e-6720c20fc30b",
+      "Type": "MessageParticipant",
+      "Transitions": {
+        "NextAction": "fa61b3b6-667b-4391-84d3-3a1d01a34096",
+        "Errors": [
+          {
+            "NextAction": "9a3438a3-b368-49ad-b961-666fc7fd5354",
+            "ErrorType": "NoMatchingError"
+          }
+        ]
+      }
+    }
+  ]
+}
